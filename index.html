@@ -418,7 +418,7 @@
 			<source src="opening.mp3" type="audio/mpeg">
 			Your browser does not support the audio element.
 		</audio>
-		<div class="preload">Tunggu Bentar Ya Bang</div>
+		<div class="preload">PLEASE WAIT</div>
 		<div class="vidcont myoverlay">
 			<div class="divvideo">
 				<video id="myVideo" width="100%" height="100%">
@@ -452,7 +452,7 @@
 						Isi identitas anda terlebih dahulu
 					</div>
 					<div class="mycontent">
-						Tekan tombol merah pojokan untuk reset nama.<br><br>
+						Tekan tombol merah untuk reset nama.<br><br>
 						Nama :
 						<input class="mytext" type="text" id="mynama" name="nama">
 					</div>
@@ -478,13 +478,14 @@
 						Maukah kau menjadi orang yang selalu ada disisiku, yang selalu ada disaat senang ataupun susah, yang selalu ada sampai akhir hayatku?
 					</div>
 					<div class="mybutton">
-						<div class="mybuttonno" onmouseover="move()" onclick="move2()" >Tidak</div>
-						<div class="mybuttonyes" onclick="playVid()">Iya</div>
+						<div class="mybuttonno" onmouseover="move()" onclick="move2()" >tidak</div>
+						<div class="mybuttonyes" onclick="playVid()">iya</div>
 					</div>
 				</div>
 				<div class="myresize"></div>
 			</div>
 		</div>
+		<span style="position: absolute; text-align: center; line-height: 100vh; width: 100vw; z-index:-10;">jangan dijual bos</span>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	  	<script type="text/javascript">
 	  		/*
@@ -499,12 +500,12 @@
 	  		namaku=localStorage.getItem("nama");
 			blur="true"; 
 			$(window).on('load',function(){
-				$('.preload').css('background','#00000000').css('color','#FFFFFF00').css('backdrop-filter','blur(0px)').text('Wes Mari').css('z-index','-2');
+				$('.preload').css('background','#00000000').css('color','#FFFFFF00').css('backdrop-filter','blur(0px)').text('SELESAI').css('z-index','-2');
 			});
 	  		function init(){
 	  			startTime();
 	  			stopOpening();
-	  			add='<div class="cc">Copyright Frizzy Ardhani @2021</div>';
+	  			add='<div class="cc">copyright Andika Sujanadi @2020</div>';
 	  			$('body').append(add);
 	  			if(localStorage.getItem("nama") != null && localStorage.getItem("checked") == "yoi"){
 		  			namaku=localStorage.getItem("nama");
