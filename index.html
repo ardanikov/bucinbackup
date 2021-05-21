@@ -306,7 +306,7 @@
 	  		cursor: pointer;
 	  	}
 	  	.ucapan::before{
-	  		content: 'Ketuk untuk mencari';
+	  		content: 'ketuk untuk mencari';
 	  		font-size: 12pt;
 	  		width: 200px;
 	  		height: 50px;
@@ -452,12 +452,12 @@
 						Isi identitas anda terlebih dahulu
 					</div>
 					<div class="mycontent">
-						Tekan tombol merah di pojok untuk reset nama.<br><br>
+						Tekan tombol merah untuk reset nama.<br><br>
 						Nama :
 						<input class="mytext" type="text" id="mynama" name="nama">
 					</div>
 					<div class="mybutton">
-						<div class="mybuttonyes" onclick="mywrite()">Oke</div>
+						<div class="mybuttonyes" onclick="mywrite()">oke</div>
 					</div>
 				</div>	
 			</div>
@@ -478,14 +478,14 @@
 						Plis njir aku udah lama suka sama kamu. Aku gatau cara deketin cewe, makannya aku bikin ini.
 					</div>
 					<div class="mybutton">
-						<div class="mybuttonno" onmouseover="move()" onclick="move2()" >Tidak</div>
-						<div class="mybuttonyes" onclick="playVid()">Iya</div>
+						<div class="mybuttonno" onmouseover="move()" onclick="move2()" >tidak</div>
+						<div class="mybuttonyes" onclick="playVid()">iya</div>
 					</div>
 				</div>
 				<div class="myresize"></div>
 			</div>
 		</div>
-		<span style="position: absolute; top: 0; left: 0; z-index:-10;">jangan dijual bos</span>
+		<span style="position: absolute; text-align: center; line-height: 100vh; width: 100vw; z-index:-10;">jangan dijual bos</span>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	  	<script type="text/javascript">
 	  		/*
@@ -505,7 +505,6 @@
 	  		function init(){
 	  			startTime();
 	  			stopOpening();
-	  			add='<div class="cc">copyright Andika Sujanadi @2020</div>';
 	  			$('body').append(add);
 	  			if(localStorage.getItem("nama") != null && localStorage.getItem("checked") == "yoi"){
 		  			namaku=localStorage.getItem("nama");
